@@ -1,30 +1,24 @@
-import React, { useState } from 'react';
-import EventList from "./components/EventList.jsx";
-import EventForm from "./components/EventForm.jsx";
+import React, { useState } from "react";
+import EventForm from "./components/EventForm";
+import EventList from "./components/EventList";
+import ClubDescription from "./components/ClubDescription";
 
 const App = () => {
   const [events, setEvents] = useState([]);
 
   const addEvent = (event) => {
-    const updatedEvents = [...events, event];
-
-    // Sort events by date (earliest first)
-    updatedEvents.sort((a, b) => new Date(a.date) - new Date(b.date));
-
-    setEvents(updatedEvents);
+    setEvents([...events, event]);
   };
 
   const deleteEvent = (index) => {
-    const updatedEvents = events.filter((_, i) => i !== index);
-    setEvents(updatedEvents);
+    setEvents(events.filter((_, i) => i !== index));
   };
 
   return (
     <div>
       <h1>Club Event Announcements</h1>
-      <h2>Add New Announcement</h2>
+      <ClubDescription />
       <EventForm addEvent={addEvent} />
-      <h2>Upcoming Events (Sorted by Date)</h2>
       <EventList events={events} deleteEvent={deleteEvent} />
     </div>
   );
