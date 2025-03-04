@@ -1,0 +1,103 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Main Container */
+.app-container {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Event Form */
+.event-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.event-form input,
+.event-form textarea,
+.event-form button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.event-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.event-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Event List */
+.event-list {
+  margin-top: 20px;
+}
+
+.event-item {
+  background: #fff;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.event-item img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.exclusive-tag {
+  color: red;
+  font-weight: bold;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: darkred;
+}
+
+.uphype-button {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.uphype-button:hover {
+  background-color: #e68900;
+}
+

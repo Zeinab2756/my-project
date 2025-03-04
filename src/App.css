@@ -1,0 +1,26 @@
+.club-description {
+    background: #ece8e8;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .club-description textarea {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .club-description button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .club-description button:hover {
+    background: darkblue;
+  }
+  
